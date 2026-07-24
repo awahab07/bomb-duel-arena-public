@@ -24,7 +24,11 @@ for (const carousel of document.querySelectorAll("[data-carousel]")) {
       slide.hidden = slideIndex !== index;
     });
     buttons.forEach((button, buttonIndex) => {
-      button.setAttribute("aria-current", String(buttonIndex === index));
+      if (buttonIndex === index) {
+        button.setAttribute("aria-current", "true");
+      } else {
+        button.removeAttribute("aria-current");
+      }
     });
     live.textContent = `${name} ${index + 1} of ${slides.length}`;
   }

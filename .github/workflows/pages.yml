@@ -25,6 +25,27 @@ jobs:
       - name: Check out public site
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
 
+      - name: Verify required public routes
+        shell: bash
+        run: |
+          set -euo pipefail
+          for route in \
+            index.html \
+            privacy-policy.html \
+            terms-of-service.html \
+            support.html \
+            privacy.html \
+            terms.html \
+            privacy-policy/index.html \
+            terms-of-service/index.html \
+            support/index.html \
+            assets/index.html \
+            style.css \
+            site.js
+          do
+            test -s "$route"
+          done
+
       - name: Configure GitHub Pages
         uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b # v5
 
