@@ -21,7 +21,7 @@
   <a href="support.html">Contact Support</a>
 </nav>
 <main>
-  <p class="updated">Effective date: July 23, 2026</p>
+  <p class="updated">Effective date: August 9, 2026</p>
 
   <p>This Privacy Policy explains what information <strong>Bomb Man Duel Arena</strong>
   (the “Game”, “we”, “us”) collects, how it is used, and the choices you have.
@@ -38,10 +38,10 @@
   <h2>2. Information we collect and process</h2>
   <ul>
     <li><strong>Anonymous account identifiers</strong> — when you first launch
-    the Game and choose an age range, the Game creates anonymous accounts tied
-    to your device through our game-server and, for players aged 13 and over,
-    Google Firebase authentication. These identifiers are not your legal name,
-    email address, or phone number.</li>
+    the Game and choose an age range, the Game creates an anonymous account
+    tied to your device using Google Firebase Anonymous Authentication. There is
+    no sign-in, password, email address, or phone number, and the identifier is
+    not your legal name.</li>
     <li><strong>Display name</strong> — the nickname you choose. It is shown to
     other players in matches, friends lists, chat, and, for players aged 13 and
     over, on the public leaderboard. Please do not use your real name.</li>
@@ -49,10 +49,10 @@
     friends and to help us locate your account if you contact support or request
     deletion.</li>
     <li><strong>Avatar photo (optional)</strong> — if you choose a photo avatar,
-    the cropped image is stored on your device. During an online match it may be
-    relayed through the game server to your opponent so they can see your avatar
-    for that session; it is not stored on our game servers as a permanent
-    profile photo.</li>
+    the cropped image is stored on your device. When an online match forms it is
+    relayed through the game service to your opponent so they can see your avatar
+    during that match, and is held only for the life of that match room; it is
+    never stored as a permanent profile photo on our servers.</li>
     <li><strong>Age-range profile (local)</strong> — on first launch you choose
     one of four age ranges. The exact selected range is stored on your device
     and is not sent to our game server. The server receives and permanently
@@ -63,15 +63,16 @@
     <li><strong>Gameplay and economy data</strong> — match results, trophies,
     wins/losses, experience, mission progress, inventory ownership, streaks,
     cooldowns, and virtual-currency balances (coins and gems). Online match and
-    wallet data are handled on our game server.</li>
-    <li><strong>Profile and leaderboard data (13 and over)</strong> — for players
-    who select an age range of 13 or older, a mirror of display name, friend
-    code, trophies, and wallet totals may be stored in Google Firebase for the
-    public leaderboard and profile display. Firebase is not initialized for
-    players who select under 13.</li>
+    wallet data are handled by our Google Firebase backend.</li>
+    <li><strong>Profile and leaderboard data</strong> — a profile row holding
+    your display name, friend code, trophies, win/loss totals, and wallet
+    totals is stored in Google Firebase and is used for the public leaderboard
+    and for showing your profile to friends and opponents. Please choose a
+    nickname rather than your real name.</li>
     <li><strong>Social messages and friends</strong> — friends lists, friend
     requests, private messages, lobby chat, match invites, blocks, reports, and
-    related moderation records are processed through our Nakama game server.
+    related moderation records are processed through our Google Firebase
+    backend.
     In-match chat is limited to a fixed list of predefined phrases and emotes
     for all players. Players under 13 may use only approved canned phrases and
     emotes in lobby and friends chat; players 13 and over may send free text
@@ -88,6 +89,11 @@
     advertising identifiers, device information, and ad interaction data
     according to your age-range profile, consent choices, and Google’s policies.
     Settings may show a privacy-choices entry point when UMP requires it.</li>
+    <li><strong>Purchases</strong> — if you buy the optional gem pack, Google
+    Play processes the payment and we receive and store the purchase token and
+    order state so the purchase can be validated and the gems granted, and so a
+    refund can be reconciled. We never receive your card number, bank details,
+    or billing address.</li>
     <li><strong>Support communications</strong> — if you email us, we receive
     the information you choose to include (such as your email address, friend
     code, device details, and message content).</li>
@@ -122,12 +128,12 @@
   <h2>5. Service providers</h2>
   <p>We use service providers to host and operate parts of the Game:</p>
   <ul>
-    <li><strong>DigitalOcean / Nakama</strong> — online matches, wallets,
-    friends, chat, invites, moderation records, and related game-server data
-    hosted in Singapore.</li>
-    <li><strong>Google Firebase</strong> — for players aged 13 and over,
-    anonymous authentication plus profile and leaderboard mirror data in the
-    United States.</li>
+    <li><strong>Google Firebase / Google Cloud</strong> — anonymous
+    authentication, online matches, wallets, purchases, friends, chat, invites,
+    moderation records, profile and leaderboard data, hosted in the United
+    States (us-central1).</li>
+    <li><strong>Google Play Billing</strong> — payment processing and purchase
+    validation for the optional gem pack.</li>
     <li><strong>Google AdMob / UMP</strong> — mobile advertising and consent
     management.</li>
   </ul>
@@ -137,9 +143,8 @@
 
   <h2>6. Where data is stored</h2>
   <ul>
-    <li><strong>Game server (Nakama on DigitalOcean)</strong> — online gameplay,
-    economy, friends, chat, invites, and moderation data.</li>
-    <li><strong>Firebase (13 and over only)</strong> — profile mirror and
+    <li><strong>Google Firebase (United States)</strong> — online gameplay,
+    economy, purchases, friends, chat, invites, moderation records, profile and
     leaderboard data.</li>
     <li><strong>Your device</strong> — settings, age-range profile, optional
     avatar photo, local chat history, and cached progress. Uninstalling the
@@ -160,11 +165,11 @@
 
   <h2>8. Children and age-related features</h2>
   <p>The Game is designed for a mixed audience and asks you to choose an age
-  range before online services start. Players who select under 13 can use Nakama
-  online services with canned social messaging, while Firebase leaderboard and
-  profile mirror features remain off. Players 13 and over may use free-text
-  social chat subject to conduct rules and may appear on the Firebase-backed
-  leaderboard. Social messaging is separated by age cohort on the server, and
+  range before online services start. Players who select under 13 may play
+  online and appear on the leaderboard, but their social messaging is limited to
+  approved canned phrases and emotes, enforced on the server. Players 13 and
+  over may use free-text social chat subject to conduct rules. The age category
+  is latched on the server the first time it is reported, and
   in-match communication remains preset-only for every age group. Reports,
   blocks, and moderator restrictions are available. If you are a parent or
   guardian and believe a child has provided personal information through the
@@ -179,8 +184,7 @@
 
   <h2>10. International transfers</h2>
   <p>Your information may be processed in countries other than where you live,
-  including Singapore and the United States, where our service providers
-  operate. Those countries may have different data-protection laws than your
+  including the United States, where our service providers operate. Those countries may have different data-protection laws than your
   country.</p>
 
   <h2>11. Your choices</h2>
