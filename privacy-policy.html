@@ -49,10 +49,12 @@
     friends and to help us locate your account if you contact support or request
     deletion.</li>
     <li><strong>Avatar photo (optional)</strong> — if you choose a photo avatar,
-    the cropped image is stored on your device. When an online match forms it is
-    relayed through the game service to your opponent so they can see your avatar
-    during that match, and is held only for the life of that match room; it is
-    never stored as a permanent profile photo on our servers.</li>
+    the Game crops it and reduces it to a small thumbnail (at most 12&nbsp;KB)
+    on your device; the original image is never uploaded or kept. When an
+    online match forms that thumbnail is relayed through the game service to
+    your opponent so they can see your avatar during that match, and is held
+    only for the life of that match room; it is never stored as a permanent
+    profile photo on our servers.</li>
     <li><strong>Age-range profile (local)</strong> — on first launch you choose
     one of four age ranges. The exact selected range is stored on your device
     and is not sent to our game server. The server receives and permanently
@@ -156,12 +158,20 @@
 
   <h2>7. Retention and deletion</h2>
   <p>Server-side data is kept for as long as your anonymous account remains
-  active. You may request deletion of your server-side data — including profile
-  information, leaderboard entry (where applicable), friends, chat-related
-  records, wallet, and associated identifiers — by contacting us. See
-  <a href="support.html">Contact Support</a> and include your friend code.
-  We aim to complete verified deletion requests within 30 days. Local device
-  data can be removed by uninstalling the Game or clearing app data.</p>
+  active. You can delete it yourself at any time from
+  <strong>Settings &rarr; Delete account</strong> inside the Game. This removes
+  your profile information, leaderboard entry (where applicable), friends,
+  chat-related records, wallet, profile photo and associated identifiers, and
+  clears the Game's local data on your device. You can keep playing
+  immediately as a new player. You may also
+  <a href="support.html">contact support</a> with your friend code; we aim to
+  complete verified deletion requests within 30 days. Local device data can
+  also be removed by uninstalling the Game or clearing app data.</p>
+  <p>Two categories are retained after deletion, and neither can be linked
+  back to you once your account is gone: reports you submitted about other
+  players, which we keep as moderation records, and purchase receipts, which
+  are bound to a one-way hash of your account and exist to prevent a purchase
+  being claimed twice.</p>
 
   <h2>8. Children and age-related features</h2>
   <p>The Game is designed for a mixed audience and asks you to choose an age
