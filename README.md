@@ -39,6 +39,8 @@ hosted here.
 - The repository root is deployed to GitHub Pages.
 - [`assets/`](assets/) contains website, app-linked, press, and campaign media.
 - Policy and support pages are published from the same HTTPS origin.
+- [`app-ads.txt`](app-ads.txt) is the AdMob authorized-seller record for the
+  Play listing (IAB app-ads.txt); it mirrors the studio site's file.
 
 © Awo Edutainment. Images and game identity in this repository may not be
 resold, repackaged, or represented as another product.
